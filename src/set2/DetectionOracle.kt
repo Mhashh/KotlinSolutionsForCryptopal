@@ -15,7 +15,7 @@ fun main(){
 }
 
 fun random128key():ByteArray{
-    var key = Random(1).nextBytes(16)
+    var key = Random(System.currentTimeMillis()).nextBytes(16)
 
     return key
 }
