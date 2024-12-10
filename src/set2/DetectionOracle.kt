@@ -1,7 +1,7 @@
 package set2
 
 import set1.AES
-import set1.AesECBdecrypt
+import set1.AesECBencrypt
 import kotlin.random.Random
 
 class ModeData(var type:String,var blockData: ByteArray)
@@ -38,7 +38,7 @@ fun randomModeEncrypt(data:String):ModeData{
     var mode = randomGen.nextInt()%2
 
     if(mode == 1){
-        var encdata  = AesECBdecrypt(dataBlock,key)
+        var encdata  = AesECBencrypt(dataBlock,key)
         return ModeData("ECB",encdata)
     }
     else{
