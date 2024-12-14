@@ -1,4 +1,5 @@
 package set1
+// 4. Detect single-character XOR
 
 import java.io.File
 

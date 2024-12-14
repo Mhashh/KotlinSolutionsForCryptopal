@@ -1,4 +1,5 @@
 package set2
+// 12. Byte-at-a-time ECB decryption (Simple)
 
 import set1.AES
 import set1.AesECBencrypt
@@ -99,6 +100,7 @@ fun detectECB(encryptionOracle:(str:String)->ByteArray):String{
 }
 
 fun decryptHiddenString(encryptionOracle:(str:String)->ByteArray,secretLength:Int):String{
+    var starttime = System.currentTimeMillis()
     var level = 0
     var index = 1
     var stringBuilder = StringBuilder(secretLength)
@@ -145,6 +147,8 @@ fun decryptHiddenString(encryptionOracle:(str:String)->ByteArray,secretLength:In
 
         level+=16
     }while(secretLength>index)
-
+    var endtime = System.currentTimeMillis()
+    var timetook = (endtime-starttime).toFloat()/1000f
+    println("Time taken for decryption : $timetook sec")
     return stringBuilder.toString()
 }

@@ -1,4 +1,5 @@
 package set1
+// 2. Fixed XOR
 
 fun main(){
 
