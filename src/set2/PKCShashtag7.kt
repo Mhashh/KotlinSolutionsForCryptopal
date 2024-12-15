@@ -41,3 +41,33 @@ fun pkcsPadding(msgBuilder:StringBuilder,blockSize:Int){
     }
 
 }
+
+fun pkcsStrip(msg:String,blockLength:Int):String{
+
+    var stringBuilder = StringBuilder(msg)
+
+    var n = msg.get(msg.length-1).code
+    var padded = true
+
+    if(n>=blockLength || n<=0)
+        return msg
+
+    var i = msg.length-1
+
+    for(j in 1..n){
+        var len = msg.get(i).code
+        if(len != n){
+            padded = false
+            break
+        }
+        i-=1
+    }
+
+    if(padded){
+        for( j in 1..n){
+            stringBuilder.delete(stringBuilder.length-1,stringBuilder.length)
+        }
+    }
+
+    return stringBuilder.toString()
+}
