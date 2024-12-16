@@ -35,4 +35,16 @@ fun main(){
     var boo2 = ByteArray(16,{boo[it]})
 
     println(boo2 in wordSet)
+
+    var a:Byte = 0xaa.toByte()
+    var b:Byte = 0xac.toByte()
+    var c:Byte = 0xaa.toByte()
+
+    if(a==c)
+        println("okay")
+
+    if(b != c)
+        println("okay")
+
+    println("decode this message, oh no this message is too long".length)
 }
