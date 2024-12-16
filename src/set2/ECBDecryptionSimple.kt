@@ -99,7 +99,7 @@ fun detectECB(encryptionOracle:(str:String)->ByteArray):String{
     return predicted
 }
 
-fun decryptHiddenString(encryptionOracle:(str:String)->ByteArray,secretLength:Int):String{
+fun decryptHiddenString(encryptionOracle:(String)->ByteArray,secretLength:Int):String{
     var starttime = System.currentTimeMillis()
     var level = 0
     var index = 1
@@ -122,6 +122,7 @@ fun decryptHiddenString(encryptionOracle:(str:String)->ByteArray,secretLength:In
                 for(j in 0..15){
                     if(testencrypted[j].compareTo(encrypted[level+j]) != 0){
                         match = false
+                        break
                     }
                 }
                 if(match){

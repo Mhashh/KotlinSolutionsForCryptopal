@@ -158,6 +158,7 @@ fun decryptHiddenSuffix(encryptionOracle:(String)->ByteArray,secretLength:Int,pa
                 for(j in 0..15){
                     if(testencrypted[startingBlock+j].compareTo(encrypted[startingBlock+level+j]) != 0){
                         match = false
+                        break
                     }
                 }
                 if(match){
