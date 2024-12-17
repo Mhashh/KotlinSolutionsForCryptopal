@@ -1,32 +1,32 @@
 # Kotlin solutions to cryptopals challenges. #
 
 ### Helpful code ###
- [AES 128](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/AES.kt)
+ [Simple kotlin Implementation of AES 128](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/AES.kt)
 
 ### Set 1:Basics ###
 
 | No. | Topic |
 | ---- | ---- |
-| 1  | [Convert hex to base64]() |
-| 2  | [Fixed XOR]() |
-| 3  | [Single-byte XOR cipher]() |
-| 4  | [Detect single-character XOR]() |
-| 5  | [Implement repeating-key XOR]() |
-| 6  | [Break repeating-key XOR]() |
-| 7  | [AES in ECB mode]() |
-| 8  | [Detect AES in ECB mode]() | 
+| 1  | [Convert hex to base64](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/Base64Encoder.kt) |
+| 2  | [Fixed XOR](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/HexXOR.kt) |
+| 3  | [Single-byte XOR cipher](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/XorCipher.kt) |
+| 4  | [Detect single-character XOR](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/XORdetect.kt) |
+| 5  | [Implement repeating-key XOR](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/RepeatingKeyXor.kt) |
+| 6  | [Break repeating-key XOR](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/BreakRepeatingXor.kt) |
+| 7  | [AES in ECB mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/AESECB.kt) |
+| 8  | [Detect AES in ECB mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set1/DetectAES.kt) | 
 
 
 ### Set 2:Block crypto ###
 
 | No. | Topic |
 | ---- | ---- |
-| 9 | [Implement PKCS#7 padding]() | 
-| 10 | [Implement CBC mode]() |
-| 11 | [An ECB/CBC detection oracle]() |
-| 12 | [Byte-at-a-time ECB decryption (Simple)]() |
-| 13 | [ECB cut-and-paste]() |
-| 14 | [Byte-at-a-time ECB decryption (Harder)]() |
-| 15 | [PKCS#7 padding validation]() |
-| 16 | [CBC bitflipping attacks]() |
+| 9 | [Implement PKCS#7 padding](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/PKCShashtag7.kt) | 
+| 10 | [Implement CBC mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/CBCMode.kt) |
+| 11 | [An ECB/CBC detection oracle](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/DetectionOracle.kt) |
+| 12 | [Byte-at-a-time ECB decryption (Simple)](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/ECBDecryptionSimple.kt) |
+| 13 | [ECB cut-and-paste](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/ECBcutpaste.kt) |
+| 14 | [Byte-at-a-time ECB decryption (Harder)](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/ECBDecryptionHard.kt) |
+| 15 | [PKCS#7 padding validation](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/PKCSValidation.kt) |
+| 16 | [CBC bitflipping attacks](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/CBCBitflipping.kt) |
 
