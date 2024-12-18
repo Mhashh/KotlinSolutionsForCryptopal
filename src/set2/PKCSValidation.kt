@@ -32,10 +32,11 @@ fun pkcsValidation(msg:String,blockLength:Int):String{
     var stringBuilder = StringBuilder(msg)
 
     var n = msg.get(msg.length-1).code
-    var padded = true
 
-    if(n>=blockLength || n<=0)
-        return msg
+    if(n<1 || n>blockLength)
+        throw InvalidPKCSPadding()
+
+    var padded = true
 
     var i = msg.length-1
 

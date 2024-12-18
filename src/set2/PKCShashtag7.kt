@@ -26,6 +26,11 @@ fun pkcsPadding(msg:String,blockSize:Int):String{
         plainTextBuilder.append(extraSpace.toChar())
         i+=1
     }
+    if(extraSpace == 0){
+        for (j in 0..15){
+            plainTextBuilder.append(blockSize.toChar())
+        }
+    }
     return plainTextBuilder.toString()
 }
 
@@ -39,6 +44,11 @@ fun pkcsPadding(msgBuilder:StringBuilder,blockSize:Int){
         msgBuilder.append(extraSpace.toChar())
         i+=1
     }
+    if(extraSpace == 0){
+        for (j in 0..15){
+            msgBuilder.append(blockSize.toChar())
+        }
+    }
 
 }
 
@@ -49,8 +59,8 @@ fun pkcsStrip(msg:String,blockLength:Int):String{
     var n = msg.get(msg.length-1).code
     var padded = true
 
-    if(n>=blockLength || n<=0)
-        return msg
+    if(n<1 || n>blockLength)
+        return stringBuilder.toString()
 
     var i = msg.length-1
 
