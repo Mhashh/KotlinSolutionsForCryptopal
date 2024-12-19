@@ -30,3 +30,9 @@
 | 15 | [PKCS#7 padding validation](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/PKCSValidation.kt) |
 | 16 | [CBC bitflipping attacks](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/CBCBitflipping.kt) |
 
+
+### Set 3:Block crypto ###
+
+| No. | Topic |
+|-----| ---- |
+| 17  | [The CBC padding oracle](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CBCPadOrc.kt) | 
