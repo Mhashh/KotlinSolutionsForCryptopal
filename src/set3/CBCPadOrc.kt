@@ -120,5 +120,5 @@ fun extractDecryptedByte(cbcPadOracle:(ByteArray,ByteArray)->Boolean,cipherBlock
         stringBuilder.append(char)
     }
 
-    return pkcsStrip(stringBuilder.toString(),16)
+    return stringBuilder.toString()
 }
