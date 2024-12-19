@@ -31,7 +31,7 @@
 | 16 | [CBC bitflipping attacks](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set2/CBCBitflipping.kt) |
 
 
-### Set 3:Block crypto ###
+### Set 3:Block & Stream crypto ###
 
 | No. | Topic |
 |-----| ---- |
