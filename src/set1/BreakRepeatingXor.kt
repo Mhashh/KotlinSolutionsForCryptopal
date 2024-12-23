@@ -47,6 +47,7 @@ fun decodeBase64(msg:String):String{
     while(i < n){
 
         var firstbit = 0
+        var validBits=0
         for(j in 0..3){
 
             var char = msg.get(i+j)
@@ -60,6 +61,7 @@ fun decodeBase64(msg:String):String{
                     byte = byte shr 1
                     k--
                 }
+                validBits+=6
             }
             else{
                 var k = firstbit + 5
@@ -73,7 +75,7 @@ fun decodeBase64(msg:String):String{
             firstbit+=6
         }
 
-        var tempstr = bufferToAscii(buffer)
+        var tempstr = bufferToAscii(buffer,validBits)
         ans = ans+tempstr
 
 
@@ -82,11 +84,13 @@ fun decodeBase64(msg:String):String{
     return ans
 }
 
-fun bufferToAscii(buffer:Array<Int>):String{
+fun bufferToAscii(buffer:Array<Int>,validBits:Int):String{
     var ans = ""
     var indices = arrayOf(0,8,16)
 
     for( i in indices){
+        if(i+7 > validBits)
+            break
         var ascii = 0
         var powertwo = 128
         for( j in 0..7){
