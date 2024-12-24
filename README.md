@@ -33,8 +33,9 @@
 
 ### Set 3:Block & Stream crypto ###
 
-| No. | Topic                                                                                                                      |
-|-----|----------------------------------------------------------------------------------------------------------------------------|
-| 17  | [The CBC padding oracle](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CBCPadOrc.kt)          | 
-| 18  | [Implement CTR, the stream cipher mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CTR.kt) |
-| 19 | [Break fixed-nonce CTR mode using substitutions](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/BreakCtrSub.kt)                              |
+| No. | Topic                                                                                                                                        |
+|-----|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 17  | [The CBC padding oracle](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CBCPadOrc.kt)                            | 
+| 18  | [Implement CTR, the stream cipher mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CTR.kt)                   |
+| 19 | [Break fixed-nonce CTR mode using substitutions](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/BreakCtrSub.kt)  |
+| 20 | [Break fixed-nonce CTR statistically](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/BreakCtrStats.kt) |
