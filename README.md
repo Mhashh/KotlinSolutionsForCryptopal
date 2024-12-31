@@ -41,6 +41,7 @@
 | 18   | [Implement CTR, the stream cipher mode](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CTR.kt)                  |
 | 19   | [Break fixed-nonce CTR mode using substitutions](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/BreakCtrSub.kt) |
 | 20   | [Break fixed-nonce CTR statistically](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/BreakCtrStats.kt)          |
-| 21   | [Implement the MT19937 Mersenne Twister RNG](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/MTR.kt)                                                                                                                                        |
-| 22   | [Crack an MT19937 seed](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CrackMT.kt)                                                                                                                                        |
-| 23   | [Clone an MT19937 RNG from its output](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CloneMT.kt)                                                                                                                                        |
+| 21   | [Implement the MT19937 Mersenne Twister RNG](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/MTR.kt)             |
+| 22   | [Crack an MT19937 seed](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CrackMT.kt)                              |
+| 23   | [Clone an MT19937 RNG from its output](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CloneMT.kt)               |
+| 24   | [Create the MT19937 stream cipher and break it](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/MTCipher.kt)     |
