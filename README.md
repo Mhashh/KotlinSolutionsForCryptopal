@@ -45,3 +45,10 @@
 | 22   | [Crack an MT19937 seed](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CrackMT.kt)                              |
 | 23   | [Clone an MT19937 RNG from its output](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/CloneMT.kt)               |
 | 24   | [Create the MT19937 stream cipher and break it](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set3/MTCipher.kt)     |
+
+
+### Set 4:Stream crypto and randomness ###
+
+| No. | Topic                                                                                                                                       |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------|
+| 25  | [Break "random access read/write" AES CTR](https://github.com/Mhashh/KotlinSolutionsForCryptopal/blob/master/src/set4/BreakRandomAccessrwCTR.kt)                           | 
